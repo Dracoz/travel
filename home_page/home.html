@@ -8,8 +8,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <h1>Welcome</h1>
+    <nav class="zone set-nav nav-stick">
+        <ul class="main-nav">
+            <li class="menu-main"><a href="../index.html">主页</a></li>
+            <li class="menu-strategy"><a href="#">攻略</a></li>
+        </ul>
+    </nav>
+    <div class="zone red body-img">
+        <!-- <img src="../img/compass.jpg" class="body-img"> -->
+         <h1 class="img-word">旅游的作用就是用现实来约束想像，不是去想事情会是怎样的，而是去看它们实际上是怎样的。</h1>
+    </div>
+    <div class="zone country-row-title">
+        <h1>踩点</h1>
+    </div>
+    <div class="zone country-box">
+        <div class="taiwan-box">
+            <div class="taiwan-101-img">
+                <img src="../img/taiwan-101.jpg">
+            </div>
+            <div class="taiwan-country">
+                台湾
+            </div>
+        </div>
+        <div class="japan-box">
+            <div class="tokyo-img">
+                <img src="../img/tokyo.jpg">
+            </div>
+            <div class="japan-country">
+                日本
+            </div>
+        </div>
+        <div class="malaysia-box">
+            <div class="kl-img">
+                <img src="../img/kl.jpg">
+            </div>
+            <div class="malaysia-country">
+                马来西亚
+            </div>
+        </div>
+    </div>
+    <footer class="zone dark-blue footer-color">
+        <p id="clock"></p>
+    </footer>
+
+    <script>
+        var clockElement = document.getElementById('clock');
+        function clock() {
+            clockElement.textContent = new Date().toLocaleString();
+        }
+        setInterval(clock, 1000);
+    
+    </script>
+
 </body>
 </html>
