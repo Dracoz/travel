@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台湾</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="zone set-nav nav-stick">
+        <ul class="main-nav">
+            <li class="menu-main"><a href="../index.html">龘</a></li>
+            <li class="menu-main"><a href="../home_page/home.html">主页</a></li>
+            <li class="menu-strategy"><a href="../home_page/strategy.html">攻略</a></li>
+        </ul>
+    </nav>
+    <div class="zone red">
+        content!!!
+    </div>
+    <footer class="zone dark-blue footer-color">
+        <p id="clock"></p>
+    </footer>
+
+    <script>
+        var clockElement = document.getElementById('clock');
+        function clock() {
+            clockElement.textContent = new Date().toLocaleString();
+        }
+        setInterval(clock, 1000);
+    
+    </script>
+
+</body>
+</html>

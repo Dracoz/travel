@@ -1,0 +1,80 @@
+body {
+    margin: auto 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+}
+
+.zone {
+    display: flex;
+}
+
+.blue {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.red {
+    background-color: crimson;
+    color: aliceblue;
+}
+
+.green {
+    background-color: chartreuse;
+    color: aliceblue;
+}
+
+.dark-blue {
+    background-color: #2d303e;
+    color: aliceblue;
+}
+
+.set-nav {
+    justify-content: center;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.main-nav > li {
+    padding: 20px;
+}
+
+.main-nav > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.main-nav > .menu-main {
+    /* border: solid 3px white; */
+    padding: 15px 30px;
+}
+
+.main-nav > .menu-strategy {
+    /* border: solid 3px white; */
+    padding: 15px 30px;
+}
+
+.main-nav > li > a:hover {
+    color: aquamarine;
+    transition: all 0.4s ease 0s;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer-color {
+    color: aliceblue;
+}
