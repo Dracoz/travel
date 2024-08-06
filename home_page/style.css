@@ -65,7 +65,7 @@ body {
 }
 
 .main-nav > li > a:hover {
-    color: aquamarine;
+    color: #8bdaf5;
     transition: all 0.4s ease 0s;
 }
 
@@ -107,71 +107,26 @@ body {
     gap: 50px;
 }
 
-.taiwan-box {
+.box {
     border: solid 1px black;
     /* padding: 10px; */
     border-radius: 10px;
     display: grid;
     cursor: pointer;
+    transition: transform 0.7s;
 }
 
-.taiwan-box:hover {
+.box:hover {
     transform: scale(1.1);
 }
 
-.taiwan-101-img > img {
+.img-container > img {
     height: 300px;
     width: 300px;
     border-radius: 10px 10px 0 0;
 }
 
-.taiwan-country {
-    display: flex;
-    justify-content: center;
-}
-
-.japan-box {
-    border: solid 1px black;
-    /* padding: 10px; */
-    border-radius: 10px;
-    display: grid;
-    cursor: pointer;
-}
-
-.japan-box:hover {
-    transform: scale(1.1);
-}
-
-.tokyo-img > img {
-    height: 300px;
-    width: 300px;
-    border-radius: 10px 10px 0 0;
-}
-
-.japan-country {
-    display: flex;
-    justify-content: center;
-}
-
-.malaysia-box {
-    border: solid 1px black;
-    /* padding: 10px; */
-    border-radius: 10px;
-    display: grid;
-    cursor: pointer;
-}
-
-.malaysia-box:hover {
-    transform: scale(1.1);
-}
-
-.kl-img > img {
-    height: 300px;
-    width: 300px;
-    border-radius: 10px 10px 0 0;
-}
-
-.malaysia-country {
+.country-name {
     display: flex;
     justify-content: center;
 }

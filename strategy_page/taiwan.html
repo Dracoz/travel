@@ -18,9 +18,37 @@
             <li class="menu-strategy"><a href="../home_page/strategy.html">攻略</a></li>
         </ul>
     </nav>
-    <div class="zone red">
-        content!!!
+    <div class="zone light-blue taiwan-map-img center-map">
+        <!-- <img src="../img/taiwan_map.png"> -->
     </div>
+
+    <div class="zone" style="justify-content: center;">
+        <h1>GoGo</h1>
+    </div>
+
+    <div class="zone" style="justify-content: flex-start;">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'taoyuan')" id="defaultOpen">桃园</button>
+            <button class="tablinks" onclick="openCity(event, 'taipei')">台北</button>
+            <button class="tablinks" onclick="openCity(event, 'xingzhu')">新竹</button>
+        </div>
+
+        <div id="taoyuan" class="tabcontent">
+            <h3>桃园</h3>
+            <p>台湾桃园。</p>
+        </div>
+          
+        <div id="taipei" class="tabcontent">
+            <h3>台北</h3>
+            <p>台湾台北。</p> 
+        </div>
+          
+        <div id="xingzhu" class="tabcontent">
+            <h3>新竹</h3>
+            <p>台湾新竹。</p>
+        </div>
+    </div>
+   
     <footer class="zone dark-blue footer-color">
         <p id="clock"></p>
     </footer>
@@ -31,7 +59,23 @@
             clockElement.textContent = new Date().toLocaleString();
         }
         setInterval(clock, 1000);
-    
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click(); 
     </script>
 
 </body>

@@ -28,6 +28,11 @@ body {
     color: aliceblue;
 }
 
+.light-blue {
+    background-color: #D2F0FA;
+    color: black;
+}
+
 .set-nav {
     justify-content: center;
 }
@@ -65,16 +70,93 @@ body {
 }
 
 .main-nav > li > a:hover {
-    color: aquamarine;
+    color: #8bdaf5;
     transition: all 0.4s ease 0s;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .footer-color {
     color: aliceblue;
 }
+
+.taiwan-map-img {
+    background: url(../img/taiwan-map-latest.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+.japan-map-img {
+    background: url(../img/map-japan-10210.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-color: #D2F0FA; */
+    background-color: white;
+}
+
+.malaysia-map-img {
+    background: url(../img/malaysia-map-img.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
+    width: 15%;
+    height: 300px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 32px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    /* background-color: #ddd; */
+    background-color: #D2F0FA;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    /* background-color: #8bdaf5; */
+    color: #18c1fa;
+    border-right: solid 6px #8bdaf5;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 30px;
+    /* padding: 0px 12px; */
+    /* border: 1px solid #ccc; */
+    width: 100%;
+    /* border-left: none; */
+    height: 300px;
+  }
