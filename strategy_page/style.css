@@ -176,13 +176,13 @@ footer {
     display: grid;
     /* flex-wrap: wrap; */
     gap: 1em;
-    grid-template-columns: repeat(auto-fit, 700px);
+    grid-template-columns: repeat(auto-fill, 450px);
 }
 
 .content-box {
     display: flex;
     border: solid 3px black;
-    line-height: 10px;
+    line-height: 20px;
     /* width: 500px; */
     /* width: 1fr; */
     flex: 1;
@@ -205,4 +205,8 @@ footer {
 .content-box-details {
     padding: 15px;
 
+}
+
+.content-box-details > p {
+    margin: 5px;
 }
