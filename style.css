@@ -76,3 +76,7 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.animate__animated.animate__fadeInLeft {
+    --animate-duration: 2s;
+  }

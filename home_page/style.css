@@ -30,6 +30,7 @@ body {
 
 .set-nav {
     justify-content: center;
+    margin-top: 20px;
 }
 
 .main-nav {
@@ -39,8 +40,10 @@ body {
     margin: 0;
     list-style: none;
     /* background-color: transparent; */
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    /* width: 100%; */
+    
 }
 
 .main-nav > li {
@@ -160,4 +163,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 1.5s;
 }
