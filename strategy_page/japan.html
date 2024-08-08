@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>台湾</title>
+    <title>日本</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -20,6 +20,49 @@
     </nav>
     <div class="zone red japan-map-img">
     </div>
+
+    <div class="zone" style="justify-content: center;">
+        <h1>GoGo</h1>
+    </div>
+
+    <div class="zone" style="justify-content: flex-start;">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'tokyo')" id="defaultOpen">东京</button>
+            <button class="tablinks" onclick="openCity(event, 'kyoto')">京都</button>
+            <button class="tablinks" onclick="openCity(event, 'okinawa')">冲绳</button>
+        </div>
+
+        <div id="tokyo" class="tabcontent">
+            <h2>东京</h2>
+            <div class="content-container">
+
+                <a href="https://travel.tycg.gov.tw/zh-tw/consume/business-district" target="_blank" style="text-decoration: none; color: black;">
+                    <div class="content-box">
+                        <div class="content-box-letter">
+                            <h1>食</h1>
+                        </div>
+                        <div class="content-box-details">
+                            <h3>桃園夜市</h3>
+                            <p>时间：週一至週日 17:30~00:00</p>
+                            <p>地址：桃園市桃園區中正路與北埔路口</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+          
+        <div id="taipei" class="tabcontent">
+            <h2>台北</h2>
+            <p>台湾台北。</p> 
+        </div>
+          
+        <div id="xingzhu" class="tabcontent">
+            <h2>新竹</h2>
+            <p>台湾新竹。</p>
+        </div>
+    </div>
+
     <footer class="zone dark-blue footer-color">
         <p id="clock"></p>
     </footer>
@@ -30,6 +73,23 @@
             clockElement.textContent = new Date().toLocaleString();
         }
         setInterval(clock, 1000);
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
     
     </script>
 
