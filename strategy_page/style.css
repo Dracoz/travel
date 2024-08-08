@@ -167,6 +167,7 @@ footer {
     /* padding: 0px 12px; */
     /* border: 1px solid #ccc; */
     width: 100%;
+    overflow: hidden;
     /* border-left: none; */
     /* height: 300px; */
   }
@@ -225,7 +226,8 @@ footer {
     }
 
     .content-box {
-        width: 300px;
+        width: 200px;
         line-height: 20px;
+        font-size: 0.7em;
     }
 }
